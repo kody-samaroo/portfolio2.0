@@ -1,9 +1,15 @@
-import '../App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import Home from "./Home";
+import Navbar from "./Navbar";
+import Projects from "./Projects";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
+      <Navbar/>
+      <Home/>
+      <br/>
+      <Projects/>
     </div>
   );
 }
