@@ -2,6 +2,7 @@ import React from 'react';
 import resume from '../assets/resume.pdf';
 import profile from '../assets/pfp.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import "../styles/Home.css";
 
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
     }
 
     return (
-        <div className="home-container">
+        <div className="home">
             <div className="home-splash">
                 <img className="home-img" src={profile} alt="Profile"/>
 
