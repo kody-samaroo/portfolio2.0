@@ -8,10 +8,10 @@ const GlobalStyles = createGlobalStyle`
   }
   :root{
     --bg-color: #001055;
-    --text-color: #1D1C1C;
-    --accent-color-1: #AEA8A8;
-    --accent-color-2: #FFF;
-    --accent-color-3: #000;
+    --text-color: white;
+    --accent-color-1: blue;
+    --accent-color-2: white;
+    --accent-color-3: black;
   }
   html{
     font-size: 10px;

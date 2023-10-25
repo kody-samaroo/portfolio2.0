@@ -35,7 +35,7 @@ function Navbar() {
             </div>
             <li> 
                 <div 
-                    className="inactive"
+                    className="nav-title inactive"
                     activeClassName="active" 
                     role="button"
                     onClick={() => { setShowNav(!showNav); scrollToSection(0)}}
@@ -46,7 +46,7 @@ function Navbar() {
 
             <li> 
                 <div 
-                    className="inactive"
+                    className="nav-title inactive"
                     activeClassName="active" 
                     role="button"
                     onClick={() => { setShowNav(!showNav); scrollToSection(650)}}
@@ -57,7 +57,7 @@ function Navbar() {
             
             <li> 
                 <div 
-                    className="inactive"
+                    className="nav-title inactive"
                     activeClassName="active" 
                     role="button"
                     onClick={() => { setShowNav(!showNav); scrollToSection(1200)}}
@@ -68,7 +68,7 @@ function Navbar() {
 
             <li> 
                 <div 
-                    className="inactive"
+                    className="nav-title inactive"
                     activeClassName="active" 
                     role="button"
                     onClick={() => { setShowNav(!showNav); scrollToSection(1850)}}

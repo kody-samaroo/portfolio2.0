@@ -21,7 +21,7 @@ export const NavStyles = styled.nav`
         background-color: var(--accent-color-1);
       }
     }
-    a {
+    .nav-title {
       display: inline-block;
       font-family: 'Georgia';
       padding: 1rem 2rem;
