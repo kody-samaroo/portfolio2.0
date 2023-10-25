@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { NavStyles } from '../styles/NavStyles';
 
 
 function Navbar() {
@@ -14,6 +15,7 @@ function Navbar() {
 
 
   return (
+    <NavStyles>
     <div className="nav-container">
         <div
             className="mobile-menu-icon"
@@ -76,7 +78,8 @@ function Navbar() {
             </li>
             
         </ul>
-    </div>    
+    </div>
+    </NavStyles>
   )
 }
 
