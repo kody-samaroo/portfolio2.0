@@ -3,9 +3,11 @@ import Home from "./Home";
 import Navbar from "./Navbar";
 import Works from "./Works";
 import Projects from "./Projects";
+import Footer from "./Footer";
 
 function App() {
   return (
+    <>
     <div className="app">
       <Navbar/>
       <Home/>
@@ -15,6 +17,11 @@ function App() {
       <Projects/>
       <br/>
     </div>
+
+    <div className="footer">
+      <Footer/>
+    </div>
+    </>
   );
 }
 
