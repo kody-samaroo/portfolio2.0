@@ -24,7 +24,7 @@ export const HomeStyles = styled.div`
         position: absolute;
         background-color: var(--accent-color-2);
         top: 60%;
-        left: 37.5%;
+        left: 35%;
         max-height: 50px;
         width: 40%;
         max-width: 250px;
@@ -35,13 +35,14 @@ export const HomeStyles = styled.div`
             color: var(--accent-color-1);
             text-align: center;
             font-size: 36px;
+            font-family: 'Garamond';
         }
     }
     .home-bio {
         position: absolute;
         background-color: var(--accent-color-1);
         top: 72.5%;
-        left: 40%;
+        left: 37.5%;
         max-height: 40px;
         width: 50%;
         max-width: 300px;
@@ -52,6 +53,7 @@ export const HomeStyles = styled.div`
             color: var(--accent-color-2);
             text-align: center;
             font-size: 28px;
+            font-family: 'Garamond';
         }
     }
     .home-icons{
@@ -92,12 +94,14 @@ export const HomeStyles = styled.div`
 
     .home-about {
         display: flex;
+        padding: 5px;
         background-color: var(--bg-color);
         color: var(--accent-color-2);
         margin-left: 20%;
         margin-right: 20%;
         text-align: center;
         font-size: 26px;
+        font-family: 'Garamond';
     }
 
     .home-buttons {

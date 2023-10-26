@@ -69,7 +69,7 @@ function Projects() {
             <h2> Projects </h2>
             <div className="project-items">
             <Swiper
-                spaceBetween={30}
+                spaceBetween={10}
                 slidesPerView={1}
                 navigation
             >

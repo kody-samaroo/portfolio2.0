@@ -1,11 +1,8 @@
 import styled from 'styled-components';
 
 export const ProjectStyles = styled.div`
-    padding: 1rem;
     .projects {
-        background-color: var(--bg-color);
-        display: block;
-        margin: auto;
+        padding: 3rem;
     }
     h2 {
         color: var(--text-color);
@@ -22,40 +19,16 @@ export const ProjectStyles = styled.div`
             font-size: 3.6rem;
         }
     }
-    .project-item-img {
-        text-align: center;;
-        max-height: 300px;
-        max-width: 500px;
-    }
-    @media only screen and (max-width: 768px) {
-        text-align: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    .project-items {
-        display: block;
-        margin: auto;
-        gap: 3rem;
-    }
-
     .swiper-wrapper {
-        padding-top: 8rem;
+        margin: auto;
+        padding-top: 6rem;
         max-width: 500px;
     }
-
     .swiper-button-prev, .swiper-button-next {
-        position: absolute;
-        right: 40px;
-        left: auto;
-        top: 20px;
-        height: 30px;
-        width: 30px;
-        background: var(--accent-color-1);
+        color: var(--text-color);
+        width: 50%;
         z-index: 10;
         transform: translateY(50%);
-        color: var(--text-color);
-        border-radius: 10px;
     }
     .swiper-button-next {
         right: 0;
