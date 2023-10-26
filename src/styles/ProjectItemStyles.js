@@ -18,10 +18,11 @@ export const ProjectItemStyles = styled.div`
     }
     .project-item-info {
         margin-top: 1rem;
-        background-color: var(--bg-color);
+        background-color: var(--accent-color-3);
         padding: 1rem;
         border-radius: 12px;
         max-width: 500px;
+        font-family: 'Garamond';
     }
     @media only screen and (max-width: 768px) {
         text-align: center;
@@ -30,21 +31,25 @@ export const ProjectItemStyles = styled.div`
     }
     .project-item-title {
         font-size: 2.2rem;
+        font-family: 'Garamond';
     }
     .project-links {
         width: 25px;
         white-space: nowrap;
+        font-family: 'Garamond';
     }
     h3,h5 {
         color: var(--text-color);
+        font-family: 'Garamond';
     }
     .project-item-desc {
         font-size: 1.6rem;
-        font-family: 'Times New Roman';
         margin-top: 1rem;
         color: var(--text-color);
         word-wrap: normal;
+        font-family: 'Garamond';
     }
+    
     @media only screen and (max-width: 768px) {
         .project-item-img, {
             height: 350px;

@@ -18,10 +18,12 @@ export const WorkItemStyles = styled.div`
     }
     .work-item-info {
         margin-top: 1rem;
-        background-color: var(--bg-color);
+        background-color: var(--accent-color-3);
         padding: 1rem;
         border-radius: 12px;
         max-width: 500px;
+        font-family: 'Garamond';
+
     }
     @media only screen and (max-width: 768px) {
         text-align: center;
@@ -30,16 +32,20 @@ export const WorkItemStyles = styled.div`
     }
     .work-item-date {
         font-size: 1.6rem;
+        font-family: 'Garamond';
     }
     .work-item-title {
         color: var(--text-color);
+        font-family: 'Garamond';
+
     }
     .work-item-desc {
         color: var(--text-color);
         font-size: 1.6rem;
-        font-family: 'Times New Roman';
         margin-top: 1rem;
         word-wrap: normal;
+        font-family: 'Garamond';
+
     }
     @media only screen and (max-width: 768px) {
         .work-item-img, {
