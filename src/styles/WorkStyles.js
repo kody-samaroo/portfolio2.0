@@ -1,12 +1,8 @@
 import styled from 'styled-components';
 
-export const ProjectStyles = styled.div`
+export const WorkStyles = styled.div`
     padding: 1rem;
-    .projects {
-        background-color: var(--bg-color);
-        display: block;
-        margin: auto;
-    }
+    background-color: var(--bg-color);
     h2 {
         color: var(--text-color);
         display: block;
@@ -18,12 +14,12 @@ export const ProjectStyles = styled.div`
         text-decoration: underline;
     }
     @media only screen and (max-width: 768px) {
-        h2 {
-            font-size: 3.6rem;
-        }
+    h2 {
+        font-size: 3.6rem;
     }
-    .project-item-img {
-        text-align: center;;
+}
+    .work-item-img {
+        text-align: center;
         max-height: 300px;
         max-width: 500px;
     }
@@ -32,18 +28,16 @@ export const ProjectStyles = styled.div`
         width: 100%;
         height: 100%;
     }
-
-    .project-items {
+    .work-items {
         display: block;
         margin: auto;
         gap: 3rem;
     }
-
     .swiper-wrapper {
-        padding-top: 8rem;
+        margin: auto;
+        padding-top: 6rem;
         max-width: 500px;
     }
-
     .swiper-button-prev, .swiper-button-next {
         position: absolute;
         right: 40px;
@@ -51,7 +45,7 @@ export const ProjectStyles = styled.div`
         top: 20px;
         height: 30px;
         width: 30px;
-        background: var(--accent-color-1);
+        background: var(--bg-color);
         z-index: 10;
         transform: translateY(50%);
         color: var(--text-color);
@@ -64,11 +58,11 @@ export const ProjectStyles = styled.div`
         font-size: 1.2rem;
     }
     @media only screen and (max-width: 768px) {
-        .project-items {
+        .work-items {
             flex-direction: column;
             max-width: 400px;
             margin: 0 auto;
             gap: 5rem;
-        }
     }
-`;
+}
+`

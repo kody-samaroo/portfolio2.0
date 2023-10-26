@@ -1,13 +1,14 @@
 import React from 'react';
 import resume from '../assets/resume.pdf';
 import profile from '../assets/pfp.jpeg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { HomeStyles } from '../styles/HomeStyles';
+import { AiFillGithub, AiFillLinkedin, AiOutlineFile } from 'react-icons/ai';
+
 
 
 export default function Home() {
 
-    const bio = "A software engineer proficient in JavaScript, React and Ruby frameworks with a background study in  information technology, data analytics and data management. I am a competent team member able to shine in any role and empower other team members around me. I am motivated to use new technologies to find simple solutions to solve complex problems."
+    const bio = "Hi, I am software engineer proficient in JavaScript, Java and Ruby with an academic background in information technology, data analytics and data management. I made this portfolio in React to showcase my developer skills and highlight my work experience. My resume is also available below as well as my contact email, feel free to le me know your thoughts."
 
     function downloadCV(){
         window.open(resume)
@@ -28,29 +29,23 @@ export default function Home() {
             </div>
 
             <div className="home-icons">
-                <FontAwesomeIcon icon="fa-brands fa-github"
+                <AiFillGithub
                     className="github-icon"
-                    onClick={() => window.open('https://github.com/jodycola?tab=repositories')}
+                    onClick={() => window.open('https://github.com/kody-samaroo?tab=repositories')}
                 />
-                <FontAwesomeIcon icon="fa-brands fa-linkedin"
+                <AiFillLinkedin
                     className="linkedin-icon"
                     onClick={() => window.open('https://www.linkedin.com/in/kody-samaroo/')}
+                />
+                <AiOutlineFile
+                    className="resume-icon"
+                    onClick={downloadCV}
                 />
             </div>
 
             <br/>
             <div className="home-about">
                 {bio}
-            </div>
-
-            <br/>
-
-            <div className="home-buttons">
-                <button
-                    class="btn btn-dark btn-outline-light"
-                    onClick={downloadCV}
-                > View Resume
-                </button>
             </div>
         </div>
         </HomeStyles>

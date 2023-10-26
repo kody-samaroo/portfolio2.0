@@ -5,11 +5,8 @@ export const HomeStyles = styled.div`
         background-color: var(--bg-color);
         position: relative;
         width: 100%;
-        text-align: center;
-        justify-content: center;
     }
     .home-splash {
-        background-color: var(--bg-color);
         position: relative;
         width: 100%;
         text-align: center;
@@ -17,7 +14,8 @@ export const HomeStyles = styled.div`
     }
     .home-img {
         position: relative;
-        margin: 10rem;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
         right: 20%;
         max-width: 250px;
         border: 2px solid var(--text-color);
@@ -25,8 +23,8 @@ export const HomeStyles = styled.div`
     .home-name {
         position: absolute;
         background-color: var(--accent-color-2);
-        top: 65%;
-        left: 35%;
+        top: 60%;
+        left: 37.5%;
         max-height: 50px;
         width: 40%;
         max-width: 250px;
@@ -42,8 +40,8 @@ export const HomeStyles = styled.div`
     .home-bio {
         position: absolute;
         background-color: var(--accent-color-1);
-        top: 76%;
-        left: 37%;
+        top: 72.5%;
+        left: 40%;
         max-height: 40px;
         width: 50%;
         max-width: 300px;
@@ -62,10 +60,9 @@ export const HomeStyles = styled.div`
         max-width: 200px;
         margin: auto;
         .github-icon {
-            height: 70%;
-            width: 70%;
+            height: 30%;
+            width: 30%;
             margin-right: 5px;
-            stroke-width: 5px;
             fill: var(--accent-color-2);
         }
         .github-icon:hover {
@@ -73,13 +70,21 @@ export const HomeStyles = styled.div`
             border-radius: 50px;
         }
         .linkedin-icon {
-            height: 70%;
-            width: 70%;
-            margin-right: 5px;
-            stroke-width: 5px;
+            height: 30%;
+            width: 30%;
             fill: var(--accent-color-2);
         }
         .linkedin-icon:hover {
+            border: 3px solid var(--accent-color-2);
+            border-radius: 10px;
+        }
+        .resume-icon {
+            height: 30%;
+            width: 30%;
+            margin-left: 5px;
+            fill: var(--accent-color-2);
+        }
+        .resume-icon:hover {
             border: 3px solid var(--accent-color-2);
             border-radius: 10px;
         }

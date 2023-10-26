@@ -1,11 +1,18 @@
 import React from 'react'
 import ProjectItem from './ProjectItem';
 import { ProjectStyles } from '../styles/ProjectStyles';
-import { register } from 'swiper/element/bundle';
+
+import SwiperCore from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/bundle';
+
 
 function Projects() {
 
-    register();
+    SwiperCore.use([Navigation]);
 
 
     const projects = [
@@ -61,12 +68,14 @@ function Projects() {
         <div className="projects">
             <h2> Projects </h2>
             <div className="project-items">
-            <swiper-container
-
-                >
+            <Swiper
+                spaceBetween={30}
+                slidesPerView={1}
+                navigation
+            >
                 {projects.map((project, index) => {
                     return (
-                        <swiper-slide key={index}>
+                        <SwiperSlide key={index}>
                             <ProjectItem
                                 title={project.title}
                                 stack={project.stack}
@@ -76,10 +85,10 @@ function Projects() {
                                 website={project.website}
                                 demo={project.demo}
                             />
-                        </swiper-slide>
+                        </SwiperSlide>
                     );
                 })}
-                </swiper-container>
+                </Swiper>
             </div>
         </div>
         </ProjectStyles>
