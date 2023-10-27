@@ -3,7 +3,6 @@ import Home from "./Home";
 import Navbar from "./Navbar";
 import Works from "./Works";
 import Projects from "./Projects";
-import Footer from "./Footer";
 
 function App() {
   return (
@@ -16,10 +15,6 @@ function App() {
       <br/>
       <Projects/>
       <br/>
-    </div>
-
-    <div className="footer">
-      <Footer/>
     </div>
     </>
   );
