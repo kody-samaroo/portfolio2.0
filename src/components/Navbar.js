@@ -60,23 +60,11 @@ function Navbar() {
                     className="nav-title inactive"
                     activeClassName="active" 
                     role="button"
-                    onClick={() => { setShowNav(!showNav); scrollToSection(1200)}}
+                    onClick={() => { setShowNav(!showNav); scrollToSection(1600)}}
                 >
                     Projects 
                 </div> 
             </li>
-
-            <li> 
-                <div 
-                    className="nav-title inactive"
-                    activeClassName="active" 
-                    role="button"
-                    onClick={() => { setShowNav(!showNav); scrollToSection(1850)}}
-                >
-                    Contact 
-                </div> 
-            </li>
-            
         </ul>
     </div>
     </NavStyles>
