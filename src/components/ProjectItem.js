@@ -1,6 +1,8 @@
 import React from 'react';
 import { ProjectItemStyles } from '../styles/ProjectItemStyles';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { AiFillGithub, AiOutlineLink, AiOutlinePlayCircle } from 'react-icons/ai';
+
+
 
 
 export default function BlogItem({ title, img, desc, stack, github, website, demo }) {
@@ -15,9 +17,9 @@ export default function BlogItem({ title, img, desc, stack, github, website, dem
             <div className="project-item-info">
                 <h3 className="project-item-title">{title}</h3>
                 <h4 className="project-links">
-                    { website ? <FontAwesomeIcon icon="fa-solid fa-link" onClick={() => window.open(`${website}`)}/> : null }
-                    { demo ? <FontAwesomeIcon icon="fa-solid fa-play"  onClick={() => window.open(`${demo}`)}/> : null } 
-                    { github ? <FontAwesomeIcon icon="fa-brands fa-github" onClick={() => window.open(`${github}`)}/> : null } 
+                    { website ? <AiOutlineLink onClick={() => window.open(`${website}`)}/> : null }
+                    { demo ? <AiOutlinePlayCircle onClick={() => window.open(`${demo}`)}/> : null } 
+                    { github ? <AiFillGithub onClick={() => window.open(`${github}`)}/> : null } 
                 </h4>
                 <h5> {renderStack} </h5>
                 <p className="project-item-desc">{desc}</p>
